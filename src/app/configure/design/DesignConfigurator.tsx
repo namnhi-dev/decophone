@@ -277,9 +277,9 @@ const DesignConfigurator = ({
                                     <DropdownMenu>
                                         <DropdownMenuTrigger asChild>
                                             <Button
-                                                variant="outline"
+                                                // variant=""
                                                 role="combobox"
-                                                className="w-full justify-between"
+                                                className="w-full justify-between "
                                             >
                                                 {options.model.label}
                                                 <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
@@ -437,7 +437,7 @@ const DesignConfigurator = ({
                                 variant="decophone"
                             >
                                 {isPending ? (
-                                    <Loader2 className="animate-spin h-6 w-6 text-white mb-2" />
+                                    <Loader2 className="animate-spin h-6 w-6 text-white " />
                                 ) : (
                                     <>
                                         Tiếp tục
