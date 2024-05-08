@@ -65,12 +65,12 @@ const ThankYou = () => {
                     </p>
 
                     <div className="mt-12 text-sm font-medium">
-                        <p className="text-zinc-900">Order number</p>
+                        <p className="text-zinc-900">Mã đơn hàng</p>
                         <p className="mt-2 text-zinc-500">{orderId}</p>
                     </div>
                 </div>
 
-                <div className="mt-10 border-t border-zinc-200">
+                <div className="mt-10 border-t border-zinc-200 text-lg">
                     <div className="mt-10 flex flex-auto flex-col">
                         <h4 className="font-semibold text-zinc-900">
                             Bạn đã có một sự lựa chọn tuyệt vời!
@@ -137,17 +137,17 @@ const ThankYou = () => {
                     <div className="grid grid-cols-2 gap-x-6 border-t border-zinc-200 py-10 text-sm">
                         <div>
                             <p className="font-medium text-zinc-900">
-                                Payment status
+                                Trạng thái
                             </p>
-                            <p className="mt-2 text-zinc-700">Paid</p>
+                            <p className="mt-2 text-green-500">Đã thanh toán</p>
                         </div>
 
                         <div>
                             <p className="font-medium text-zinc-900">
-                                Shipping Method
+                                Phương thức vận chuyển
                             </p>
                             <p className="mt-2 text-zinc-700">
-                                DHL, takes up to 3 working days
+                                Giao hàng từ 3 - 4 ngày
                             </p>
                         </div>
                     </div>
@@ -155,16 +155,20 @@ const ThankYou = () => {
 
                 <div className="space-y-6 border-t border-zinc-200 pt-10 text-sm">
                     <div className="flex justify-between">
-                        <p className="font-medium text-zinc-900">Subtotal</p>
+                        <p className="font-medium text-zinc-900">Tạm tính</p>
                         <p className="text-zinc-700">{formatPrice(amount)}</p>
                     </div>
                     <div className="flex justify-between">
-                        <p className="font-medium text-zinc-900">Shipping</p>
+                        <p className="font-medium text-zinc-900">
+                            Phí vận chuyển
+                        </p>
                         <p className="text-zinc-700">{formatPrice(0)}</p>
                     </div>
                     <div className="flex justify-between">
-                        <p className="font-medium text-zinc-900">Total</p>
-                        <p className="text-zinc-700">{formatPrice(amount)}</p>
+                        <p className="font-medium text-zinc-900">Tổng tiền</p>
+                        <p className="text-green-600 font-semibold text-xl">
+                            {formatPrice(amount)}
+                        </p>
                     </div>
                 </div>
             </div>
