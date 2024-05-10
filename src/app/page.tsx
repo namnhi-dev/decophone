@@ -149,7 +149,7 @@ export default function Home() {
                         </h2>
 
                         <Image
-                            src="/logo.png"
+                            src="/logo1.png"
                             alt="Logo"
                             width={120}
                             height={120}
